@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from AppPrimerMVT.views import mi_familia
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("AppPrimerMVT/", include("AppPrimerMVT.urls")),
+    path("AppPrimerMVT/", mi_familia),
 ]
