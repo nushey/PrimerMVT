@@ -6,16 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Familiares</title>
-    <link rel="stylesheet" type="text/css" href="{% static "/style.css/" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "normalize.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: rgb(237, 245, 80);">
-    <h1 style="color:darkblue" style="font:bold"><center>Primer MVT - Nahuel Zeballos</center></h1>
-    <h2><center>FAMILIARES:</center></h2>
-    <p>
-        <center>Uno de mis familiares es: {{familiar1.nombre}}, es mi {{familiar1.parentesco}}, tiene {{familiar1.edad}} años y nació el {{familiar1.fecha_nacimiento}}</center><br>
-        <center>Uno de mis familiares es: {{familiar2.nombre}}, es mi {{familiar2.parentesco}}, tiene {{familiar2.edad}} años y nació el {{familiar2.fecha_nacimiento}}</center><br>
-        <center>Uno de mis familiares es: {{familiar3.nombre}}, es mi {{familiar3.parentesco}}, tiene {{familiar3.edad}} años y nació el {{familiar3.fecha_nacimiento}}</center><br>
-
-    </p>
+<body>
+    <div>
+        <h1>Primer MVT - Nahuel Zeballos</h1>
+        <h2>FAMILIARES:</h2>
+        <div class="familiar__p">
+            <p class="familiar__p-1">
+                Uno de mis familiares es: {{familiar1.nombre}}, es mi {{familiar1.parentesco}}, tiene {{familiar1.edad}} años y nació el {{familiar1.fecha_nacimiento}}<br>
+            </p>
+            <p class="familiar__p-2">
+                Uno de mis familiares es: {{familiar2.nombre}}, es mi {{familiar2.parentesco}}, tiene {{familiar2.edad}} años y nació el {{familiar2.fecha_nacimiento}}<br>
+            </p>
+            <p class="familiar__p-3">
+                Uno de mis familiares es: {{familiar3.nombre}}, es mi {{familiar3.parentesco}}, tiene {{familiar3.edad}} años y nació el {{familiar3.fecha_nacimiento}}<br>
+            </p>
+        </div>  
+    </div>
 </body>
 </html>
